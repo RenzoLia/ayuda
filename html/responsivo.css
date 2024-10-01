@@ -1,0 +1,82 @@
+.padre
+{
+    background-color: khaki;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 3fr 3fr 1fr; /*esto siempre va en el padre*/
+    grid-template-rows: 1fr 1fr auto auto 1fr; /*esto siempre va en el padre*/
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
+                         "cont1 cont2 cont3 publicidad1"
+                         "cont1 cont2 cont3 publicidad2"
+                         "footer footer footer footer";
+}
+.padre .header
+{
+    background-color: aquamarine;
+    grid-area: header; /*tambien podemos usar en los hijos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padre .nav
+{
+    background-color: azure;
+    padding: 5px;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.padre .nav .boton
+{
+    background-color: yellow;
+    margin: 10px;
+
+}
+.padre .cont1
+{
+    background-color: gainsboro;
+    grid-area: cont1;
+}
+.padre .cont2
+{
+    background-color: gainsboro;
+    grid-area: cont2;
+}
+.padre .cont3
+{
+    background-color: gainsboro;
+    grid-area: cont3;
+}
+.padre .publicidad1
+{
+    background-color: darkorange;
+    grid-area: publicidad1;
+}
+.padre .publicidad2
+{
+    background-color: darkorange;
+    grid-area: publicidad2;
+}
+.padre .footer
+{
+    background-color: brown;
+    grid-area: footer;
+}
+
+@media screen and (max-width:768px){
+    .padre
+    {
+        background-color: red;
+        grid-template-areas: "header header header header"
+                             "nav nav nav nav"
+                             "cont1 cont1 cont1 cont1"
+                             "cont2 cont2 cont3 cont3"
+                             "publicidad1 publicidad2 publicidad2 publicidad2"
+                             "footer footer footer footer";
+    }
+}

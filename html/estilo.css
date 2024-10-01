@@ -1,0 +1,139 @@
+.sombrero1
+{
+    background-color: black;
+    width: 150px;
+    height: 80px;
+    position: fixed;
+    top: 10px;
+    left: 800px;
+    z-index: 14;/*para sobreponer el sombrero*/
+}
+
+.sombrero2
+{
+    background-color: black;
+    width: 500px;
+    height: 10px;
+    position: fixed;
+    top: 80px;
+    left: 625px;
+    z-index: 13; /*para sobreponer el sombrero*/
+}
+.cara
+{
+    background-color: orange;
+    width: 350px;
+    height: 350px;
+    border-radius: 80%;
+    position: fixed;
+    top: 65px;
+    left: 700px;
+    z-index: 13;
+}
+.ojo1
+{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: fixed;
+    top:150px;
+    left: 780px;
+}
+.ojo2
+{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: fixed;
+    top:150px;
+    left: 880px;
+}
+.iris1
+{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    top:175px;
+    left: 785px;
+}
+.iris2
+{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    top:175px;
+    left: 885px;
+}
+.nariz
+{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 225px;
+    left: 825px;
+    border-radius: 80px;
+    z-index: 13;
+}
+.boca
+{
+    background-color: yellow;
+    border-radius:80px ;
+    width:250px;
+    height: 80px;
+    position: fixed;
+    top: 300px;
+    left: 745px;
+}
+.labios
+{
+    background-color: purple;
+    border-radius:0 0 50px 50px ; /*Primer valor (0px): Radio de la esquina superior izquierda.
+    Segundo valor (0px): Radio de la esquina superior derecha.
+    Tercer valor (50): Radio de la esquina inferior derecha.
+    Cuarto valor (50): Radio de la esquina inferior izquierda.*/
+    width:150px;
+    height: 25px;
+    position: fixed;
+    top: 325px;
+    left: 795px;
+}
+.izquierdo
+{
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 350px;
+    left: 680px;
+    border-radius:350px 350px 0 350px;
+    transform: rotate(-45deg);
+
+}
+.derecho
+{
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 350px;
+    left: 900px;
+    border-radius:350px 350px 350px 0;
+    transform: rotate(45deg);
+}
+.centro
+{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 380px;
+    left: 815px;
+    border-radius: 80px;
+}

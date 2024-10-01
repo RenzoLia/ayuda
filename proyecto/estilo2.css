@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #cccccc;
+    margin: 5px auto;
+    width: 50%;
+}
+.principal
+{
+    border: 1px solid black;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "menu menu menu"
+                         "contenido contenido publicidad"
+                         "footer footer footer";
+}
+.principal .encabezado
+{
+    background-color:#2980b9;
+    grid-column: encabezado;
+}
+.principal .encabezado img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*Esta propiedad es clave para que la imagen se ajuste al contenedor sin distorsionarse. Hace que la imagen se escale y recorte para cubrir todo el espacio disponible, manteniendo sus proporciones originales.*/
+}
+.principal .menu
+{
+    grid-column: menu;
+    background-color: #2c3e50;
+}
+.principal .menu ul
+{
+    list-style: none;
+}
+.principal .menu ul li
+{
+    float: left;
+}
+.principal .menu ul li a
+{
+    padding: 20px;
+    text-decoration: none; /*esto es para que no se subraye el texto*/
+    display: block;
+    color:white;
+}
+.principal .menu ul li a:hover
+{
+    background-color: #3498db; 
+}
+.principal .contenido
+{
+    padding: 10px;
+    background-color: #c2c2d6;
+    grid-column: contenido;
+}
+.principal .contenido .items {
+    display: grid; /* Cambiamos a grid para un mejor control */
+    grid-template-columns: repeat(3, auto); /* 3 columnas de igual ancho */
+    grid-auto-rows: minmax(100px, auto); /* Altura mínima de 100px, se ajusta automáticamente */
+    grid-gap: 10px; /* Espacio entre elementos */
+    
+}
+
+.principal.contenido .items .item {
+    background-color:#f5f5f5;
+    padding: 10px;
+    box-sizing: border-box;
+}    
+.principal .publicidad
+{
+    padding: 10px;
+    background-color: #e74c3c;
+    grid-column: publicidad;
+}
+.principal .publicidad .items2
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.principal .publicidad .items2 .item2
+{
+    padding: 10px;
+    background-color:#f5f5f5;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.principal .footer
+{
+    padding: 10px;
+    background-color:#333333 ;
+    color:#f1f1f1 ;
+    grid-column: footer;
+}

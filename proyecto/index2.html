@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Document</title>
+    <style>*
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color: #cccccc;
+            margin: 5px auto;
+            width: 50%;
+        }
+        .principal
+        {
+            border: 1px solid black;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(5,auto);
+            grid-template-areas: "encabezado encabezado encabezado"
+                                 "menu menu menu"
+                                 "contenido contenido publicidad"
+                                 "footer footer footer";
+        }
+        .principal .encabezado
+        {
+            background-color:#2980b9;
+            grid-column: encabezado;
+        }
+        .principal .encabezado img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .principal .menu
+        {
+            grid-column: menu;
+            background-color: #2c3e50;
+        }
+        .principal .menu ul
+        {
+            list-style: none;
+        }
+        .principal .menu ul li
+        {
+            float: left;
+        }
+        .principal .menu ul li a
+        {
+            padding: 20px;
+            text-decoration: none; /*esto es para que no se subraye el texto*/
+            display: block;
+            color:white;
+        }
+        .principal .menu ul li a:hover
+        {
+            background-color: #3498db; 
+        }
+        .principal .contenido
+        {
+            padding: 10px;
+            background-color: #c2c2d6;
+            grid-column: contenido;
+        }
+        .principal .contenido .items {
+            display: grid; /* Cambiamos a grid para un mejor control */
+            grid-template-columns: repeat(4, auto); /* 3 columnas de igual ancho */
+            grid-auto-rows: minmax(100px, auto); /* Altura mínima de 100px, se ajusta automáticamente */
+            grid-gap: 10px; /* Espacio entre elementos */
+        }
+
+        .principal .contenido .items .item {
+            background-color:#f5f5f5;
+            padding: 10px;
+            box-sizing: border-box;
+        }    
+        .principal .publicidad
+        {
+            padding: 10px;
+            background-color: #e74c3c;
+            grid-column: publicidad;
+        }
+        .principal .publicidad .items2
+        {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .principal .publicidad .items2 .item2
+        {
+            padding: 10px;
+            background-color:#f5f5f5;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .principal .footer
+        {
+            padding: 10px;
+            background-color:#333333 ;
+            color:#f1f1f1 ;
+            grid-column: footer;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="encabezado">
+            <img src="1366_2000.jpeg" alt="imagen">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Producto</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="contenido">
+            <h2>Contenido</h2>
+            <div class="items">
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta reiciendis voluptas assumenda ipsum totam atque ipsa voluptates? Aspernatur voluptates nulla suscipit placeat, recusandae laborum. Commodi a ea in qui?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quia adipisci consequuntur culpa, totam consectetur dicta optio ut porro quos, corrupti aspernatur cupiditate dolores rerum maiores doloremque quaerat ipsum! Vel.
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda dolore debitis quod, voluptas ipsa voluptate numquam officiis placeat ea ipsum modi cumque quidem architecto sint magnam consectetur omnis neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque quod fugit cum, dolores quidem totam, quas exercitationem, nulla sunt nostrum quos officia! Voluptatum recusandae officiis saepe possimus cupiditate blanditiis?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="publicidad">
+            <h2>Publicidad</h2>
+            <div class="items2">
+                <div class="item2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quam eum vitae fugit dolor blanditiis incidunt modi quia error! Voluptatem, ut est dolore beatae nam cumque quaerat excepturi at quis.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed obcaecati voluptatem eum fugiat, ut accusamus, repellendus praesentium, at doloremque delectus velit adipisci corrupti neque enim quibusdam debitis dolorem fuga molestias!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita adipisci laboriosam animi doloremque fuga quae ipsam rem, odit veritatis sequi sunt, ab velit. At debitis dolore corporis deserunt rerum?
+                    </p>
+                </div>
+                <div class="item2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum explicabo quae perferendis quibusdam nisi commodi aliquid possimus, aut eligendi beatae nulla autem aspernatur deleniti quam, suscipit, consequuntur placeat adipisci veritatis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolorem, a nesciunt soluta nisi repellat ab quos quasi culpa laboriosam consectetur deserunt itaque blanditiis et, harum error adipisci sint nostrum?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Pie de pagina</h2>
+            Hecho por Renzo Lia Cortez
+        </div>
+    </div>
+</body>
+</html>

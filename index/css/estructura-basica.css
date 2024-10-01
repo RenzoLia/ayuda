@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #e6e6e6;
+    font-size: 16px;
+}
+header, .main, footer
+{
+    background: #fff;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    margin: 20px auto; /*20px arriba y abajo y "auto" a los lados*/
+}
+header nav
+{
+    background: #528fD5;
+    overflow: hidden; /*nos sirve para ocultar el contenido que sobrepasa el contenedor y la otra es que nos limpia nuestros float left*/
+}
+header nav ul
+{
+    list-style: none;
+}
+header nav ul li
+{
+    float:left;
+}
+header nav ul li a
+{
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover
+{
+    background: #75ACEC;
+}
+.main .articles
+{
+    width: 68.5%;
+    float: left;
+    margin-right: 1.5%;
+}
+.main .articles article
+{
+    padding: 20px;
+    background:  #fff;
+    margin-bottom: 20px;
+}
+aside 
+{
+    width: 30%;
+    padding: 20px;
+    background: #ff8000;
+    float: left;
+    box-sizing: border-box;
+}
+footer
+{
+    background: #000;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+
+}

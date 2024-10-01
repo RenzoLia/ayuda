@@ -1,0 +1,29 @@
+a
+{
+    font-size: 20px;
+    padding:10px 20px; /*10px arriba y abajo 20px a los lados padding nos da un espacio entre el texto y la caja*/
+    text-decoration: none;
+    margin: 10px 10px 10px 10px; /*arriba,derecha,abajo,izquierda*/
+}
+/*Pseudoclases*/
+/*son las que nos permiten ponerle estilo a los enlaces dependiendo el estado que estos tengan */
+a:link /*que propiedades quiero que tengan los enlaces que no e visitado*/
+{
+    color: green;
+}
+a:hover /*que quiero que tenga de efecto cuando yo pase el mouse por el enlace*/
+{
+    text-decoration: underline;
+    background: black;
+    color: aliceblue;
+}
+a:active /*Esto es para decir que va a pasar cuando le demos un click al enlace*/
+{
+    color: orange;
+}
+a:visited /*Esto es como se veran los enlaces que hemos visitado*/
+{
+    color: black;
+    text-decoration: line-through;
+}
+/*El mas usado es el hover los demas casi nunca se usan*/

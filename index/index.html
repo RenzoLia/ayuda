@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> <!--esto para agregar la hoja de estilos css -->
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/renzo.ico"> <!--esto es para agregar un icono al lado de la etiqueta title-->
+    <title>Renzo</title>
+</head>
+<body>
+    <!--Etiquetas-->
+    <!--"h1" solo se puede usar una vez
+        "br" se usa para dar un salto de linea
+        "b" pone en negrita el texto solo es para darle un estilo visual 
+        "strong" tambien pone en negrita pero este le da mas valor de enfasis "i" nos permite poner las letras en italica se puede usar mucho
+        "blockquote" nos permite agregar una cita
+        "cite" sirve para agregar al autor de dicha cita se puede agregar al inicio o al final
+        "hr" nos permite agregar una linea horizontal separadora-->
+    <!--Ejemplo de como usar las etiquetas-->    
+
+    <h1>Etiquetas</h1>
+
+    <p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Blanditiis <i>doloremque culpa ducimus</i> unde, inventore, ratione sapiente totam consequuntur dolore ab atque assumenda<br/>qui odio ipsum eum tenetur, voluptatum dignissimos! Dolor? 
+    </p>
+    <hr/>
+    <h2>Cita</h2>
+    
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae animi rerum totam sit. Numquam sequi dolor delectus reiciendis, consequuntur repudiandae eaque nobis totam, aperiam laudantium autem aliquam natus labore illum?
+    </blockquote>
+
+    <cite>Renzo Lia Cortez</cite>
+
+    <!--Enlaces-->
+    <!-- el atributo "target="_blank" hace que nos redireccione hacia otra pestaña"-->
+    <hr/>
+    <h3>Enlaces</h3>
+
+    <a target="_blank" href="https://www.google.com.bo/?hl=es">Ir a google</a>
+    <a href="imagenes/1366_2000.jpeg">Ir a imagen</a>
+    <script src="archivo.js"></script> <!-- para agregar el codigo de javascript-->
+    <a href="mailto:contacto@Renzo.com" title="Enviar correo a Renzo">Enviar mail</a>
+
+    <!--Listas-->
+
+    <h4>Listas desordenadas</h4> <!-- Son las que mas se usan -->
+
+    <ul>
+        <li><a href="#">Item #1</a></li> <!-- Para menu de navegacion -->
+        <li>Item #2</li>
+        <!--Dentro de cada lista podemos tener un submenu-->
+        <li>
+            <ul> 
+                <li>Item #1</li>
+                <li>Item #2</li>
+            </ul>
+        </li>
+        <li>Item #4</li>
+        <li>Item #5</li>
+    </ul>
+
+
+    <h4>Listas ordenadas</h4> <!-- No se usan mucho -->
+
+    <ol>
+        <li>Item #1</li>
+        <li>Item #2</li>
+        <li>Item #3</li>
+        <li>Item #4</li>
+        <li>Item #5</li>
+    </ol>
+
+    <!-- Imagenes -->
+    <!--Atributos de las imagenes
+        "alt" nos permite agregar texto si esque no puede visualizar la imagen
+        "title" nos da una descripcion de la imagen-->
+    <h4>Imagenes</h4>
+    <img src="imagenes/1366_2000.jpeg" width="200px" height="200px" alt="imagen" title="Imagen de Renzo"/>
+    
+    <!-- Tablas -->
+    <h4>Tablas</h4>
+
+    <table>
+        <tr> <!-- "tr" son las filas-->
+            <td>columna #1</td> <!-- "td" son las columas -->
+            <td>columna #2</td>
+            <td>columna #3</td>
+        </tr>
+        <tr>
+            <td>columna #4</td>
+            <td>columna #5</td>
+            <td>columna #6</td>
+        </tr>
+        <tr>
+            <td>columna #7</td>
+            <td>columna #8</td>
+            <td>columna #9</td>
+        </tr>
+    </table>  
+    
+    <!-- Formularios -->
+
+    <h4>Formularios</h4>
+    <!--Atributos
+        "type" para que podamos escribir en el formulario 
+        "placeholder" se para proporcionar sugerencias o ejemplo de lo que se espera que el usuario ingrese en ese espacio
+        "maxlength" maximo de caracteres a escribir
+        "name" Sirve para la organizacion de datos
+        "id" es para asignar un nombre unico este actua como una especie de identificador
+        la etiqueta "label" sirve para mejorar la usabilidad de los formularios para explicar el proposito del campo, facilitar la interaccion del usuario  -->
+    <form>
+        <label for="nombre">Ingrese su nombre</label> <!---->
+        <input type="text" placeholder="Escribe tu nombre" maxlength="5" name="nombre" id="nombre">
+
+        <input type="password">
+
+        <input type="email" name="" id="">
+        <br/><br/>
+
+        <label>
+        <input type="checkbox" name="genero" id="hombre" >hombre
+        </label>
+        <label>
+        <input type="checkbox" name="genero" id="mujer" >mujer <!-- "checkbox" son las casillas de obcion multiple-->
+        </label>
+    </form>
+    <br/><br/>
+    <form>
+        <label>
+        <input type="radio" name="genero" id="hombre" >hombre <!-- "radio" es solo para seleccionar una opcion-->
+        </label>
+
+        <label>
+        <input type="radio" name="genero" id="mujer" >mujer
+        </label>
+
+        <button type="button" value="Enviar"></button> <!--Nos sirve para hacer alguna opcion para javascript o algun otro lenguaje-->
+        <input type="submit"> <!--Este es para enviar los datos-->
+
+        <select name="" id="">
+            <option value="Mexico">Mexico</option>
+            <option value="Bolivia">Bolivia</option>
+        </select>
+
+        <input type="color" name="" id="">
+        <input type="range" name="" id="">
+    </form>
+  
+</body>
+</html>

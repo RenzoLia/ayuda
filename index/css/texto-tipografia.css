@@ -1,0 +1,26 @@
+h1
+{
+    text-align: center;
+    background-color: aqua;
+}
+
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif; /*Para cambiar la tipografia*/
+    font-size: 16px; /*Para cambiar el tamaño de las letras*/
+    font-weight: normal; /*Que anchura tendra nuestra letra
+    los encabezados normalmente estan en negritas con esto nosotros lo podemos poner normal*/
+    text-align: left; /*Esto es para alinear el texto*/
+    line-height:30px; /*determina la altura de cada línea de un bloque de texto.*/
+    text-decoration: none;
+    /*text-decoration:underline; esto es para subarayar el texto tambien hay "line-through" esto tacha texto*/
+    text-transform: lowercase; /*Para transformar el texto ya sea en mayuscula, minuscula o que la primera letra de cada palabra sea mayuscula ("uppercase,lowercase,capitalize")*/
+    letter-spacing:normal; /*Es para el espacio entre cada letra (podemos poner unidades como "20px")*/
+    word-spacing: normal;/*Es para el espacio entre cada palabra (podemos poner unidades como "20px")*/
+    text-shadow:1px 2px 3px black; /*Es para agregar sombra al texto  1px de izquierda a derecha 2px verticalmente 3px de tamaño y el color*/
+}
+a
+{
+    text-decoration: none; /*Esto si no quieres que los enlaces tengan un subrayado abajo del texto*/
+}

@@ -1,0 +1,21 @@
+table
+{
+    border: 1px solid #000;
+    border-collapse: collapse; /*esto es para hacer que se paresca mas a una tabla con "collapse" ya tendriamos una tabla*/
+    width: 500px;
+    height: auto;
+}
+table td
+{
+    border: 1px solid #000;
+    padding: 10px;
+}
+table tr:hover
+{
+    background-color: #ccc;
+}
+table td:hover
+{
+    background-color: #000;
+    color: #fff;
+}

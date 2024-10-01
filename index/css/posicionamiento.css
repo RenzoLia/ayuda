@@ -1,0 +1,25 @@
+div
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 30px;
+    
+    /* Posicionamiento flotante 
+
+    float: left;*/ 
+}
+.caja2
+{
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    /* Posicionamiento con "position"*/
+
+    /* "position:relative"es como si le dieras al elemento un punto de partida fijo desde el cual podrás moverlo usando las propiedades top, right, bottom y left.*/
+    /* "position: absolute" sirve para que el elemento se "despega" de su posición original y se coloca exactamente donde tú le indiques usando las propiedades top, right, bottom y left, esto pasa dentro de la caja principal en este caso seria el body*/
+    position: fixed; /*te permite fijar un elemento en una posición específica dentro de la ventana del navegador, independientemente de cuánto se desplace la página.si esta dentro de una caja se fijara dentro de la caja*/
+    /*position: static; este es el predeterminado*/
+}

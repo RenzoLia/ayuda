@@ -1,0 +1,41 @@
+ul > ul
+{
+    list-style-type: circle; /* "disc" es el que viene por defecto */
+}
+
+.lista
+{
+    list-style-type: square; /* con esto los volvemos cuadrado tambien hay el "circle" con lo cual los volvemos circulos*/
+    list-style-position: inside; /*esto es para la posocion de las listas el valor por defecto es "outside" */
+}
+
+ol
+{
+    list-style-type: upper-latin; /* el predeterminado es "decimal" pero lo cambiamos por upper latin o lower latin que son los mas usados*/
+}
+
+.menu /*los menus se hacen mediante listas desordenadas*/
+{
+    width: 100%;
+    background-color: black;
+    list-style: none; /* con esto quitamos las viñetas osea lo que esta al comienzo de de inicio etc */
+    margin: 0; /*margen de 0 para que no nos quede un espacio al quitar la viñetas*/
+    padding: 0; /*padding 0 para que no nos quede ningun margen*/
+
+}
+.menu li
+{
+    display: inline-block;
+
+}
+.menu li a
+{
+    padding: 10px 20px; /*10px de arriba y abajo 20px a los lados y el padding siempre tiene que ir en el elemento "a"*/
+    display: block;
+    color: aliceblue;   
+}
+.menu li a:hover
+{
+    background-color: #ccc;
+    color: #000;
+}

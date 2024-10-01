@@ -1,0 +1,23 @@
+.caja-flexible
+{
+    background-color: aquamarine;
+    padding: 15px;
+    display: flex;
+    /*otras propiedades que se habilitan cuando yo uso el display  averiguar para que sirve cada uno de los siguientes*/
+    flex-direction: row;  /* "row" es el que viene por defecto pero es lo mas comun o lo que mas se utiliza*/
+    /*flex-direction: column;  tambien hay el column-reverse*/
+    /*ver todas las propiedades que son los flex*/
+    /*flex-wrap:nowrap; es el por defecto*/
+    flex-wrap: wrap; /* Es para que me respeta el ancho definido del dispositivo en este caso es los 100px del "width" tambien hay el wrap-reverse es lo contrario*/
+    /*align-items: center;*/
+    align-items: flex-start; /*tambien hay el flex-end*/
+    /*justify-content: center;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: space-between; */
+    justify-content: space-around;/*ver para que sirve el justify-content*/
+}
+.item-flexible
+{
+    background-color: yellow;
+    width: 100px;
+}

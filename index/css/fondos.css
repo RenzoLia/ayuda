@@ -1,0 +1,15 @@
+body
+{
+    background:url(../imagenes/1366_2000.jpeg);
+    background-repeat: no-repeat; /*es para controlar como se repite una imagen de fondo 
+    repeat: (valor por defecto) Repite la imagen tanto horizontal como verticalmente, creando un mosaico.
+    repeat-x: Repite la imagen únicamente en el eje horizontal.
+    repeat-y: Repite la imagen únicamente en el eje vertical.
+    no-repeat: No repite la imagen, mostrando solo una instancia.*/
+    background-attachment: fixed; /*controlar el comportamiento de las imagenes de fondo:
+    scroll: (valor por defecto) La imagen de fondo se desplaza junto con el resto del contenido cuando el usuario se desplaza por la página. Este es el comportamiento más común y el que se aplica si no se especifica ningún otro valor.
+    fixed: La imagen de fondo permanece fija en su posición, incluso cuando el usuario se desplaza por la página. Esto crea un efecto de paralaje y puede ser muy útil para crear fondos que destaquen sobre el contenido.*/
+    color:yellow;
+    /*background-position:center center ; se utiliza para controlar la posicion inicial de una imagan de fondo dentro de un elemento*/
+    background-position: 20px 50px;
+}

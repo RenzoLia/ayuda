@@ -1,0 +1,77 @@
+.contenedor-principal
+{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: aqua;
+    font-size: 25px;
+    text-align: center;
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 10fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "menu menu menu" 
+                         "contenido contenido  publicidad"
+                         "pie-pagina pie-pagina pie-pagina"; /*averiguar para que nos sirve */
+}
+.contenedor-principal>div
+{
+    background-color: chartreuse;
+}
+.contenedor-principal .cabecera
+{
+    background-color: red;
+    grid-column: cabecera;
+}
+.contenedor-principal .menu
+{
+    background-color: yellow;
+    grid-column: menu;
+}
+.contenedor-principal .contenido
+{
+    background-color: blue;
+    grid-column: contenido;
+
+}
+.contenedor-principal .publicidad
+{
+    background-color: darkslateblue;
+    grid-column: publicidad;
+}
+.contenedor-principal .pie-pagina
+{
+    background-color: gold;
+    grid-column: pie-pagina;
+}
+.contenido .items
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+.items .item
+{
+
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+    width:50%;
+}
+.publicidad .items2
+{
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.items2 .item1
+{
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
+    width: 95%;
+}

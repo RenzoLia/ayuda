@@ -1,0 +1,18 @@
+div
+{
+    background-color: aqua;
+    width: 100%;
+}
+
+img
+{
+    /*Para centrar la imagen tengo que tener tanto un alto como un "margin:auto" para centra la imagen y un "display:block" porque las imagenes normalmente estan en linea "inline" */
+    width: 400px;
+    height: auto;
+    margin: auto; /*Nos sirve para centrar un "section" o un "div"*/
+    display: block;
+    border-radius: 50%; /*Si le pongo 50% es para que sea redondo*/
+    box-shadow: 5px 5px 0px orange; /*Esto es para la sombra*/
+    padding: 10px;
+    border: 1px solid black; /*Esto es para crear una especie de marco*/
+}
